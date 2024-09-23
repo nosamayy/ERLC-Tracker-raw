@@ -16,32 +16,29 @@
         h1 {
             color: orange;
         }
+        #container {
+            display: inline-block;
+            background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            padding: 20px;
+            border-radius: 10px;
+        }
         #visit-counter, #note {
             font-size: 48px;
             color: white;
-            background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)) 
-                        radial-gradient(circle at center, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-            background-size: 100% 100%;
-            padding: 20px;
-            display: inline-block;
-            border-radius: 10px;
-            margin-bottom: 10px;
+            margin: 0;
         }
         #note {
             font-size: 12px;
-            margin-top: 5px;
             font-weight: bold;
-            background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)) 
-                        radial-gradient(circle at center, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-            background-size: 100% 100%;
-            padding: 10px;
-            border-radius: 10px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <div id="visit-counter">Loading...</div>
-    <p id="note">Created by nosamayy</p>
+    <div id="container">
+        <div id="visit-counter">Loading...</div>
+        <p id="note">Created by nosamayy</p>
+    </div>
 
     <script>
         const universeId = '903807016';
@@ -76,4 +73,5 @@
     </script>
 </body>
 </html>
+
 
